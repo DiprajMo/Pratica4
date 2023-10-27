@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+    <head>
+    <!--Ponemos el nombre que quieremos que se llame el Titulo de pagina-->
+    <title>Formulari</title>
+    <!--El meta charst uft-8 sirve para que nos soporte character especiales-->
+    <meta charset="utf-8">
+    <!--Usamos el Link para vincular fichero de afuera por ejemplo un external css-->
+    <link rel="stylesheet" href="fitxer.css">
+    </head>
+
+    <body>
+    <!--Aqui ponemos el titulo que salga en nuestro pantalla-->
+    <h1>Subscriu-te al noticiari ITIC Barcelona</h1>
+    <!--usamos el etiqueta <b> para poner los textos en negrita -->
+        <b>Primer,explica'ns qui ets</b><br><br>
+    <!-- aqui empezamos a crear el formulario, usaremos la etiqueta <form> y usaremos el "action" para vincular otro fichero html -->
+        <form action="formulari_enviat.html">
+        <!--Ponemos "lable" para especificar una etiqueta para un elemento <input> de un formulario 
+        y aqui haremos un lable para Email-->
+        <label for="Email">Email</label>
+        <!--Ponemos la entrada del usuario donde tiene que poner su mail y con el "required hacemos que sea obligatorio que ponga eso"-->
+        <input class="email" type="email" id="Email" name="email" required><br>
+        <!--Aqui ponemos un lable para poner Nombre y apellido -->
+        <label for="Nom i cognoms">Nom i cognoms</label>
+        <!--Ponemos la entrada del usuario donde tiene que poner su nombre i apellido -->
+        <input class="nom" type="text" id="Nom i cognoms" name="Nom i cognoms" required><br>
+        <!--Lable para el edad de los usuario-->
+        <label for="Edat">Edat</label>
+        <!--Entrada del usuario con el input donde pida su edad-->
+        <input id="edat" type="number" id="Edat" name="Edat" required><br>
+
+        <b>Quin cicle estàs estudiant?</b><br><br>
+        <!--usaremos el Type= Radio para que tiene que eligir los opciones que hay y con el "checked un valor se queda como por defecto"-->
+        <input type="radio" id="Asix" name="Cicle" value="Asix" checked>
+        <!--ponemos un lable como siempre para los valores-->
+        <lable for="Asix">ASIX</lable><br>
+        <!--Aqui ponemos otros opciones para que tenga que eigir el usuario-->
+        <input type="radio" id="DAM" name="Cicle" value="DAM">
+        <!--Y el lable para poner epecificar el valor-->
+        <label for="DAM">DAM</label><br>
+        <input type="radio" id="DAW" name="Cicle" value="DAW">
+        <label for="DAW">DAW</label><br><br>
+
+        <label for="curs">I en quin curs?</label>
+        <!--Con el select podremos hacer un menu desplegable-->
+        <select id="curs" name="Curs" required>
+            <!--Aqui ponemos los valores que quieremos que tenga el menu-->
+            <option value="primer">Primer</option>
+            <option value="segon">Segon</option>
+        </select><br><br>
+
+        <b>Marca els temes que vuñguis estar sempre al dia!</b><br><br>
+        <!--Usamos el checkbox para que el usuario tenga que elegir multiples opciones-->
+        <input type="checkbox" id="IA" name="IA" value="IA" checked>
+        <!-- Y tambien el lable para dar valor al Input-->
+        <label for="IA">Intel·ligència Artificial</label><br>
+        <input type="checkbox" id="Compu_quantica" name="Compu_quantica" value="Compu_quantica">
+        <label for="Compu_quantica">Comutacio quantica</label><br>
+        <input type="checkbox" id="Supercom" name="Supercom" value="Supercom">
+        <label for="Supercom">Supercomputació</label><br>
+        <input type="checkbox" id="Recerca_algo" name="Recerca_algo" value="Recerca_algo">
+        <label for="Recerca_algo">Recerca en algorísmia</label>
+
+        <!--Un p usamos para un texto normal -->
+        <p>Hi ha algun tema més t'intressi? Explica'ns-ho!</p>
+        <!--El textarea sirve para que podra escribir un mensaje o texto los usuarios-->
+        <textarea class="textarea" name="mensaje" placeholder="També magradaria saber les últimes novetats sobre....."
+            required></textarea>
+        <br><br>
+        <!--El type Submit sirve para hacer un boton de enviar o entregar el formulario.-->
+        <input class="button" type="submit" formaction="formulari_enviat.html" value="Subscriu-me">
+
+        </form>
+    </body>
+
+</html>
