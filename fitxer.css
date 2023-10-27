@@ -1,0 +1,70 @@
+body{
+    /* usamos el estillo por clases y ponemos que tenga un background-color y que el formato sea caption*/
+    background-color: #DED1C2;
+    font:caption;   
+}
+
+h1{
+    /*Ponemos un color a h1*/
+    color: #D0681F;
+}
+
+
+.nom{
+    /* Ponemos los valoes que quieramos el nom y usamos el clase para poder diferenciar y 
+    estamos poniendo que el ancho de nom sera 300px etc.. */
+    width: 300px;
+    margin-left: 34px;
+    margin-bottom: 5px;
+}
+.nom:focus{
+    /* con el focus hacemos que cuando esta puesto o esta trabajando en el elemento  que tenga class=nom se cambie el fondo de color */
+    background-color: #fff183bf;
+}
+.email{
+    /* Ponemos los valoes que quieramos el nom y usamos el clase para poder diferenciar entre el clase email y nom
+    con el mismo anchura que el nom */
+    width: 300px;
+    /*Aqui hacemos que el espacio a su izquierda sea de 104px*/
+    margin-left: 104px;
+    /*Y aqui ponemos que los espacio entre el abajo y este sea 5px*/
+    margin-bottom: 5px;
+    
+}
+.email:focus{
+    background-color: #fff183bf;
+}
+#edat{
+    /*usamos el # para dar un identificador a un valor en este caso a edad y con el anchura de 100px etc..*/
+    width: 100px;
+    margin-left: 112px;
+    margin-bottom: 50px;
+}
+#edat:focus{
+    background-color: #fff183bf;
+}
+.textarea{
+    width: 400px;
+    height: 200px;
+}
+.textarea:focus{
+    background-color: #fff183bf ;
+}
+
+
+.button{
+    background-color: #D4DEDE;
+    width: 100px;
+    /* el height sirve para poner altura al elemento que lleva este clase*/
+    height: 50px;
+}
+
+.button:hover{
+    /* el background:hover sirve para dar valor cuando el crusor de raton esta encima de este elemento
+    y en este caso pues cuando esta encima pues que se cambie el color de fondo*/
+    background-color: #AEF7DE;
+}
+
+.b{
+    margin-bottom: 50px;
+}
